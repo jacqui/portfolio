@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-brand-primary: #4f46e5; /* Indigo 600 - Main buttons, active links, logos */
+  --color-brand-secondary: #06b6d4; /* Cyan 500 - Accents, highlights */
+  --color-brand-bg: #f9fafb; /* Gray 50 - Page background */
+  --color-brand-text: #111827; /* Gray 900 - Primary text */
+  --color-brand-light: #e5e7eb; /* Gray 200 - Borders, dividers */
 }
 
 @theme inline {
@@ -10,12 +13,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Mapping semantic theme names to your new variables */
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-light: var(--brand-light);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Light Mode token definitions (Your default) */
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f9fafb; /* Soft gray background */
+    --foreground: #111827; /* Off-black text */
+
+    --brand-primary: #4f46e5; /* Vibrant Indigo */
+    --brand-secondary: #06b6d4; /* Accent Cyan */
+    --brand-light: #e5e7eb; /* Soft gray for borders */
   }
 }
 
