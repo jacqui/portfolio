@@ -49,16 +49,18 @@ export default function RootLayout({
                 Projects
               </a>
               <a
-                href="#"
+                href="/cv.pdf"
                 className="hover:text-brand-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 CV
               </a>
               <a
-                href="#"
+                href="/about"
                 className="hover:text-brand-primary transition-colors"
               >
-                Contact
+                About Me
               </a>
             </nav>
           </div>
