@@ -34,7 +34,7 @@ export default function AboutPage() {
           experience in applied public health technology directly informs my
           commitment to population health data collection.
         </p>
-        <p className="w-full text-lg leading-8 text-zinc-600">
+        <p className="w-full py-4 text-lg leading-8 text-zinc-600">
           I am originally from New York City, but my work has led to me living
           in California, France, the UK, and now Australia.
         </p>
