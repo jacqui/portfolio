@@ -29,7 +29,7 @@ const projects: Project[] = [
 export default function ProjectsPage() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col py-32 px-16 bg-white">
+      <main className="flex flex-1 w-full max-w-3xl flex-col px-16 bg-white">
         <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black mb-10">
           Projects
         </h1>
