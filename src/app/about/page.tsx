@@ -17,7 +17,7 @@ export default function AboutPage() {
           early 2000s, building interactives and visual storytelling tools for
           Esquire and Popular Mechanics.
         </p>
-        <p className="w-full text-lg leading-8 text-zinc-600">
+        <p className="w-full py-4 text-lg leading-8 text-zinc-600">
           Prior to my work in media, I honed my technical skills working in the
           Silicon Valley and the early startup scene of New York City. I was a
           lead developer and architect at companies including StreetEasy, OVEN
