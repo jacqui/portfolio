@@ -1,11 +1,12 @@
 export default function AboutPage() {
   return (
-    <div className="flex flex-col flex-1 items-center font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col px-16 bg-white">
-        <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black mb-10">
-          About Me
-        </h1>
-        <p className="max-w-md text-lg leading-8 text-zinc-600">
+
+<div className="flex flex-col flex-1 items-center font-sans px-4">
+  <main className="flex flex-1 w-full max-w-3xl flex-col py-12 sm:py-24 px-4 sm:px-16 bg-white">
+    <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black mb-6">
+      About Me
+    </h1>
+    <p className="w-full text-lg leading-8 text-zinc-600">
           I am a developer, journalist, and public health researcher-in-training
           with several decades of experience designing software and managing
           data systems. Much of my career has been spent in newsrooms at{" "}
@@ -16,13 +17,13 @@ export default function AboutPage() {
           early 2000s, building interactives and visual storytelling tools for
           Esquire and Popular Mechanics.
         </p>
-        <p className="max-w-md text-lg leading-8 text-zinc-600">
+        <p className="w-full text-lg leading-8 text-zinc-600">
           Prior to my work in media, I honed my technical skills working in the
           Silicon Valley and the early startup scene of New York City. I was a
           lead developer and architect at companies including StreetEasy, OVEN
           Digital, IDEO, Live Nation, and Friendster.
         </p>
-        <p className="max-w-md text-lg leading-8 text-zinc-600">
+        <p className="w-full text-lg leading-8 text-zinc-600">
           I also contributed to the development of the Baobab Anti-Retroviral
           Treatment (BART) system, a patient management application used in
           HIV/AIDS treatment clinics in Malawi and aimed at leveraging
@@ -33,8 +34,7 @@ export default function AboutPage() {
           experience in applied public health technology directly informs my
           commitment to population health data collection.
         </p>
-        <p className="max-w-md text-lg leading-8 text-zinc-600"></p>
-        <p className="max-w-md text-lg leading-8 text-zinc-600">
+        <p className="w-full text-lg leading-8 text-zinc-600">
           I am originally from New York City, but my work has led to me living
           in California, France, the UK, and now Australia.
         </p>
