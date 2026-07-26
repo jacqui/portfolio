@@ -41,7 +41,7 @@ export default function RootLayout({
                 Jacqui Lough
               </a>
             </span>
-            <nav className="flex items-center gap-6 text-sm font-medium">
+            <nav className="flex items-center text-sm font-medium flex-wrap justify-between gap-4" >
               <a
                 href="/projects"
                 className="hover:text-brand-primary transition-colors"
