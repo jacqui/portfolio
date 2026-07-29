@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Jacqui Lough",
-  description:
-    "Yet another personal website featuring my projects, CV, and contact info.",
+  description: "About me, my projects, CV, and contact info.",
 };
 
 export default function RootLayout({
@@ -41,7 +40,7 @@ export default function RootLayout({
                 Jacqui Lough
               </a>
             </span>
-            <nav className="flex items-center text-sm font-medium flex-wrap justify-between gap-4" >
+            <nav className="flex items-center text-sm font-medium flex-wrap justify-between gap-4">
               <a
                 href="/projects"
                 className="hover:text-brand-primary transition-colors"
