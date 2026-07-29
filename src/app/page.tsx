@@ -38,9 +38,9 @@ export default function Home() {
         <p className="mb-8 max-w-2xl text-lg leading-8 text-zinc-600">
           For two decades I have built interactive stories, newsroom tools, and
           data dashboards. I have done this work at the New York Times, the BBC,
-          and Condé Nast International. Now I am pointing those same skills at
-          public health, where clear data can change what people understand and
-          what they do.
+          Condé Nast International, and Hearst Interactive Studios. Now I am
+          pointing those same skills at public health, where clear data can
+          change what people understand and what they do.
         </p>
         <div className="flex flex-wrap gap-4">
           <a
