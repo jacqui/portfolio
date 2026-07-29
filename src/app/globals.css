@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --color-brand-primary: #4f46e5; /* Indigo 600 - Main buttons, active links, logos */
-  --color-brand-secondary: #06b6d4; /* Cyan 500 - Accents, highlights */
+  --color-brand-primary: #0f7a5a; /* Emerald 700 - Main buttons, active links, logos */
+  --color-brand-secondary: #10b981; /* Emerald 500 - Accents, highlights */
   --color-brand-bg: #f9fafb; /* Gray 50 - Page background */
   --color-brand-text: #111827; /* Gray 900 - Primary text */
   --color-brand-light: #e5e7eb; /* Gray 200 - Borders, dividers */
@@ -26,8 +26,8 @@
     --background: #f9fafb; /* Soft gray background */
     --foreground: #111827; /* Off-black text */
 
-    --brand-primary: #4f46e5; /* Vibrant Indigo */
-    --brand-secondary: #06b6d4; /* Accent Cyan */
+    --brand-primary: #0f7a5a; /* Emerald */
+    --brand-secondary: #10b981; /* Accent Emerald */
     --brand-light: #e5e7eb; /* Soft gray for borders */
   }
 }
