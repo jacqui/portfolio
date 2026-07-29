@@ -1,35 +1,39 @@
 @import "tailwindcss";
 
+/* Brand tokens, defined once and used in every colour scheme.
+   Change these five values and the whole site follows. */
 :root {
-  --color-brand-primary: #0f7a5a; /* Emerald 700 - Main buttons, active links, logos */
-  --color-brand-secondary: #10b981; /* Emerald 500 - Accents, highlights */
-  --color-brand-bg: #f9fafb; /* Gray 50 - Page background */
-  --color-brand-text: #111827; /* Gray 900 - Primary text */
-  --color-brand-light: #e5e7eb; /* Gray 200 - Borders, dividers */
+  --brand-primary: #0f7a5a; /* Emerald 700 - buttons, active links, logo */
+  --brand-secondary: #10b981; /* Emerald 500 - accents, highlights */
+  --brand-bg: #f9fafb; /* Gray 50 - page background */
+  --brand-text: #111827; /* Gray 900 - primary text */
+  --brand-light: #e5e7eb; /* Gray 200 - borders, dividers */
+
+  /* Background and foreground default to the light palette */
+  --background: var(--brand-bg);
+  --foreground: var(--brand-text);
 }
 
+/* Expose the tokens to Tailwind so bg-brand-*, text-brand-*, border-brand-* work */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Mapping semantic theme names to your new variables */
   --color-brand-primary: var(--brand-primary);
   --color-brand-secondary: var(--brand-secondary);
+  --color-brand-bg: var(--brand-bg);
+  --color-brand-text: var(--brand-text);
   --color-brand-light: var(--brand-light);
 }
 
-/* Light Mode token definitions (Your default) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #f9fafb; /* Soft gray background */
-    --foreground: #111827; /* Off-black text */
-
-    --brand-primary: #0f7a5a; /* Emerald */
-    --brand-secondary: #10b981; /* Accent Emerald */
-    --brand-light: #e5e7eb; /* Soft gray for borders */
-  }
+/* This site is intentionally light in every scheme.
+   We pin a light color-scheme so form controls and scrollbars stay light,
+   and we do NOT change the brand tokens for dark mode, so the emerald
+   shows for everyone regardless of their OS setting. */
+:root {
+  color-scheme: light;
 }
 
 body {
