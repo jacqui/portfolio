@@ -26,7 +26,7 @@ const eras: Era[] = [
       {
         title: "Australian childhood vaccination rates",
         kicker: "Interactive map · D3",
-        meta: "Python · pandas · D3 · SVG · SA3 geography",
+        meta: "Python · pandas · D3 · SVG",
         feature: true,
         id: "immunisation-map",
         description: [
@@ -46,11 +46,11 @@ const eras: Era[] = [
       {
         title: "Is there a vaccine for that?",
         kicker: "Web app · Next.js",
-        meta: "Next.js · Drizzle ORM · Neon Postgres · Tailwind · Vercel",
+        meta: "Next.js · Drizzle ORM · Neon Postgres · Tailwind · Work-in-Progress",
         feature: true,
         id: "vaccine-tracker",
         description: [
-          "A field-notes style reference that answers one question for a given disease. Is there a vaccine, is one in trials, or is there none at all. Each disease has an epidemiology, transmission, vaccine status, and recommendations section, with sources cited and dated.",
+          "A field-notes style reference I'm currently working on to answer one question for a given disease: is there a vaccine available? Each disease has an epidemiology, transmission, vaccine status, and recommendations section, with sources cited and dated.",
           "It began as a proof of concept for rapidly prototyping a data product with an AI assistant. The stack is a full production setup, with data stored in Neon Postgres, typed access through Drizzle, and deployment on Vercel. Sources include the Australian Immunisation Handbook and WHO Disease Outbreak News.",
         ],
         tags: [
@@ -67,9 +67,9 @@ const eras: Era[] = [
   },
   {
     heading: "The New York Times",
-    when: "2009 – 2014 · Interactive News",
+    when: "2009 – 2015 · Interactive News and Research",
     intro:
-      "As Assistant Editor on the Interactive News desk, I built newsroom tools and interactive stories, then moved into newsroom analytics.",
+      "I spent more than five years at the Times. As Assistant Editor on the Interactive News desk I built newsroom tools and interactive stories, and I helped start the newsroom's first editorial analytics team. I finished as a Research Engineer in the R&D Lab, prototyping storytelling and data ideas.",
     projects: [
       {
         title: "Super Bowl XLVII live dashboard",
@@ -78,7 +78,7 @@ const eras: Era[] = [
         feature: true,
         id: "superbowl",
         description: [
-          "For the 2013 Super Bowl me and my team built an internal dashboard that let the Sports Desk cover the game in real time from the newsroom. When something happened on the field, a journalist clicked a single button, field goal, touchdown, turnover, and a fully designed New York Times graphic dropped straight into the live blog, with the play and the running score.",
+          "For the 2013 Super Bowl my team and I built an internal dashboard that let the Sports Desk cover the game in real time from the newsroom. When something happened on the field, a journalist clicked a single button, field goal, touchdown, turnover, and a fully designed New York Times graphic dropped straight into the live blog, with the play and the running score.",
           "I also built a database of every player, each with a small graphic showing team, number, and a short bio. The first time a player was named in the coverage, their name became a hover card, so a reader could see who they were and their key stats without leaving the story. It turned a fast, messy live event into something clear and richly contextual.",
         ],
         tags: [
@@ -95,13 +95,13 @@ const eras: Era[] = [
         ],
       },
       {
-        title: "Olympics coverage",
-        kicker: "Interactive · Data-Heavy",
-        meta: "London 2012 · live results feeds · international syndication",
+        title: "London 2012 Summer Olympics",
+        kicker: "Interactive · Data · Sports",
+        meta: "302 events · 39 disciplines · live results feeds · syndication",
         feature: true,
         description: [
-          "I worked on three consecutive Olympic Games, and London 2012 was the biggest dataset I have ever handled. The results feed arrived as a huge, fast flow of XML that we turned into live medal tables, event pages, and graphics, syndicated for readers in Japan, Brazil, and the UK.",
-          "The interesting part was making dense results readable. For the modern pentathlon we broke the scoring out step by step. We highlighted the exact round that broke a record, with a tooltip naming the kind of record set. We even surfaced the strange horse descriptions in the equestrian feed, which read a little like personal ads, to bring the data to life.",
+          "The most ambitious Olympics coverage the desk had attempted yet, and the biggest dataset I have then ever handled. It carried real time results across 302 events in 39 disciplines, medal counts, athlete bios, and world records, all sitting alongside the stories, photography, and interactives.",
+          "It was also the desk's first go at entrepreneurial journalism. We partnered with Reuters to syndicate the coverage in three packages, so all the results and athlete data had to be localised and translated for Brazilian Portuguese, British English, and Japanese sites among others. Making dense results readable was a challenge! For instance, we broke the modern pentathlon out step by step, highlighted the exact round that set a record with a tooltip naming it, and even surfaced the strange horse descriptions in the equestrian feed, which read a little like personal ads. ReadWriteWeb gave us the gold medal for the best Olympics website.",
         ],
         tags: ["Live sport", "Large data", "Tooltips", "Syndication"],
         links: [
@@ -110,6 +110,25 @@ const eras: Era[] = [
             url: "https://www.niemanlab.org/2013/04/the-new-york-times-tackles-the-olympics/",
           },
         ],
+      },
+      {
+        title: "Sochi 2014 Winter Olympics",
+        kicker: "Interactive · editorial strategy",
+        meta: "Elasticsearch · JSON · highlights over encyclopedic",
+        description: [
+          "After the London data explosion, we looked at the analytics and rethought the approach for Sochi. Rather than spend our time restructuring the IOC's often obtuse ODF format into exhaustive results pages, we focused on an overall editorial strategy that still served detailed results to the core sports fans.",
+          "Technically we stored the data in Elasticsearch, a native JSON search engine and database, which kept greater fidelity to the original feed while being far easier to work with. The result was a compelling hub with highlights, strong photography, and live results woven into the reporting. It resonated with readers more than our previous almost encyclopedic coverage of every lap of every phase.",
+        ],
+        tags: ["Winter Olympics", "Elasticsearch", "Editorial strategy"],
+      },
+      {
+        title: "Vancouver 2010 Winter Olympics",
+        kicker: "Interactive · first big data games",
+        meta: "IOC ODF feed · schedule tracker · athlete bios · live medals",
+        description: [
+          "Our first extensive use of data in Olympics coverage. The IOC released its most comprehensive data feed yet, the ODF, which let us build a personalised schedule tracker, athlete bios, and live medal awards. It set the pattern for everything that came at London and Sochi.",
+        ],
+        tags: ["Winter Olympics", "Live results", "Schedule tracker"],
       },
       {
         title: "Election results loader",
@@ -161,7 +180,7 @@ const eras: Era[] = [
         kicker: "Crowdsourcing",
         meta: "Global photo crowdsourcing · interactive globe",
         description: [
-          "The Times asked readers around the world to photograph the same moment. More than thirteen thousand images came back. The interactive news team built the system that gathered, filtered, and organised them into a spinning three dimensional globe, searchable by place and topic.",
+          "The Times asked readers around the world to photograph the same moment. More than thirteen thousand images came back. The interactive news team collaborated with the photo desk to build the system that gathered, filtered, and organised them into a spinning three dimensional globe along with the graphics desk, searchable by place and topic.",
         ],
         tags: ["Crowdsourcing", "Photo data", "Interactive"],
         links: [
@@ -172,14 +191,24 @@ const eras: Era[] = [
         ],
       },
       {
+        title: "Contribute to Our Reporting",
+        kicker: "Reader callouts",
+        meta: "Branching forms · Affordable Care Act coverage",
+        description: [
+          "How do you hear from more people than boots on the ground reporting allows. I worked with the business and science desks on the rollout of the Affordable Care Act, focusing on three groups it would touch most, patients, providers, and employers.",
+          "I built a series of callouts, custom forms that led each reader through different questions depending on their earlier answers. Combined with traditional reporting, they let us hear from a far larger and more varied group. Readers did not just add to known stories, they led us to new ones. It was an early example of news as a conversation rather than a broadcast.",
+        ],
+        tags: ["Reader contributions", "Branching forms", "Health policy"],
+      },
+      {
         title: "Haiti earthquake missing persons",
         kicker: "Sensitive data",
-        meta: "Data matching · public help tool",
+        meta: "UGC platform · PFIF · Google People Finder",
         description: [
-          "After the 2010 Haiti earthquake, I worked on a tool that helped people search for and share news of missing friends and family, collaborating with NPR, Ushahidi, ICRC and Google to make our data available in 
-a standard format via API. It is a piece of work that has stayed with me, a reminder that data tools can carry real weight for real people.",
+          "After the 7.0 quake hit Port-au-Prince in January 2010, a colleague noticed readers were emailing us for help finding loved ones. Using a user generated content platform I had built, I published a simple submission form for a name, details, contact, and a photo. The first submission arrived within minutes, and we turned the responses into an interactive collage of the missing.",
+          "The US State Department had chosen Google's People Finder as the shared resource, so I collaborated with NPR, Ushahidi, the ICRC, and Google to publish our data in the People Finder Interchange Format via an API endpoint, then wrote a tool to send regular updates. Our interactive stayed current, even marking people once they were found safe. CNN and the Miami Herald followed suit. It is a piece of work that has stayed with me, a reminder that data tools can carry real weight for real people.",
         ],
-        tags: ["Humanitarian", "Search", "Public service"],
+        tags: ["Humanitarian", "Data sharing", "PFIF", "Public service"],
       },
     ],
   },
@@ -197,10 +226,19 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
         tags: ["Streaming data", "Visual tooling", "Open source"],
         links: [
           {
-            label: "Write-up on Source by former colleague Mike Dewar",
+            label: "Write-up on Source",
             url: "https://source.opennews.org/articles/introducing-streamtools/",
           },
         ],
+      },
+      {
+        title: "Article reboot",
+        kicker: "Research Engineer · digital storytelling",
+        meta: "New forms outside the deadline cycle",
+        description: [
+          "A Lab project to rethink what a Times article could be once it was freed from the daily deadline cycle. It explored new digital storytelling forms, from richer structure to more useful ways of surfacing related coverage, using Go and Elasticsearch under the hood. Much of what I learned here fed straight into the Madison and Hive work.",
+        ],
+        tags: ["Storytelling", "Go", "Elasticsearch"],
       },
       {
         title: "@NYTPlusContext",
@@ -212,19 +250,21 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
         tags: ["Twitter bot", "Search API", "Experiment"],
         links: [
           {
-            label: "My write-up on Source",
+            label: "Write-up on Source",
             url: "https://source.opennews.org/articles/bot-find-source-serendipity/",
           },
         ],
       },
       {
-        title: "Hive",
-        kicker: "Crowdsourcing tool",
-        meta: "Open source · reader participation",
+        title: "Madison and Hive",
+        kicker: "Crowdsourcing · Go",
+        meta: "Elasticsearch · JSON · open source framework",
         description: [
-          "An open source crowdsourcing framework from the R&D Lab. It gave newsrooms a reusable way to set readers small tasks at scale, such as tagging or reviewing large sets of documents and images, and to gather the results back cleanly.",
+          "Madison is a public site built with Jane Friedhoff that asked readers to help identify advertisements from the Times archive. Ads are notoriously hard to read programmatically because of their creative and inconsistent layouts and typefaces, so we gave the audience a few ways to pitch in depending on their interest and spare time.",
+          "Madison runs on Hive, an open source platform I created for building crowdsourcing apps in many contexts. Informed by our Streamtools work, Hive uses Go for fast JSON parsing and a clean interface to Elasticsearch. Pairing a compiled language with a search engine let it handle a wide variety of reader contributions across very different tasks.",
         ],
-        tags: ["Crowdsourcing", "Open source", "Reader tools"],
+        tags: ["Crowdsourcing", "Go", "Elasticsearch", "Open source"],
+        links: [{ label: "Madison", url: "https://madison.nytimes.com/" }],
       },
     ],
   },
@@ -232,6 +272,15 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
     heading: "BBC News Labs",
     when: "2015 – 2016 · London",
     projects: [
+      {
+        title: "General Election coverage dashboards",
+        kicker: "Internal tools · politics",
+        meta: "UK General Election · party coverage",
+        description: [
+          "During the UK General Election I built internal dashboards that helped the newsroom track and balance coverage of the political parties. The idea was simple. Give editors a clear, live picture of who was being covered and how, so the reporting stayed fair and informed rather than guided by hunch.",
+        ],
+        tags: ["Elections", "Newsroom analytics", "Fair coverage"],
+      },
       {
         title: "Hooked, a graphic novel",
         kicker: "Illustrated storytelling",
@@ -307,11 +356,11 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
         ],
       },
       {
-        title: "Interactive journalism, group wide",
-        kicker: "Team and strategy",
+        title: "Head of Interactives, Vogue International",
+        kicker: "Team and strategy · 11 countries",
         meta: "Cross-title tooling · editorial technology",
         description: [
-          "Beyond any one product, my role was to bring interactive and data thinking to titles across Condé Nast International. That meant helping editorial teams work with data, build interactive features, and try new storytelling formats without needing a full engineering team of their own.",
+          "As Head of Interactives for Vogue International, I built and led a digital team that worked across eleven countries. My job was to bring interactive and data thinking to Vogue titles and their social channels, helping editorial teams work with data, build interactive features, and pitch new storytelling formats without needing a full engineering team of their own.",
         ],
         tags: ["Leadership", "Editorial tech", "Enablement"],
       },
@@ -319,24 +368,49 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
   },
   {
     heading: "Where it started",
-    when: "2004 – 2006 · Malawi",
+    when: "Early 2000s · New York and Malawi",
     projects: [
       {
         title: "BART antiretroviral treatment system",
-        kicker: "Public health developer · Baobab Health",
-        meta: "Clinical data · touchscreen point of care",
+        kicker: "Public health hacker · Baobab Health",
+        meta: "Ruby on Rails · touchscreen point of care · Lilongwe",
         feature: true,
         description: [
-          "Long before the newsroom work, I contributed remotely and spent time onsite in Lilongwe to collaboratively build health software with Baobab Health. The Baobab Antiretroviral Treatment system, known as BART, helped clinics register and track patients on HIV treatment using touchscreen terminals designed for low resource settings.",
-          "This is the thread that runs through everything else on this page. Public health is where I began, and it is where I am heading back to now, with twenty more years of data and engineering behind me.",
+          "I spent two years as a public health hacker volunteering with Baobab Health, a small trust working to get better care to the people who need it most. I contributed remotely then onsite in Lilongwe, working with the team on the Baobab Antiretroviral Treatment system, known as BART, which helped clinics register and track patients on HIV treatment. It ran on donated terminals we hacked to add touchscreens and barcode scanners, powered over ethernet so a single cable carried both data and electricity in a setting with unreliable power. I focused hard on test coverage and refactoring, because in clinical software a bug is not an inconvenience.",
+          "The impact was concrete. Patient registration dropped from about fifteen minutes to sixty seconds, and returning patients were found in under ten. The interface was simple enough that a hospital janitor named Gem started registering patients on his lunch break, and went on to run registration at the central hospital. This is the thread that runs through everything else on this page. Public health is where I began, and it is where I am heading back to now, with twenty more years of data and engineering behind me.",
         ],
-        tags: ["Health informatics", "HIV care", "Low resource design"],
+        tags: [
+          "Health informatics",
+          "HIV care",
+          "Ruby on Rails",
+          "Low resource design",
+        ],
+      },
+      {
+        title: "Hearst Interactive Studios",
+        kicker: "News app developer · magazines",
+        meta: "New York · 2000 to 2003",
+        description: [
+          "My first taste of newsroom technology. From 2000 to 2003 I built interactives and the backend publishing tools behind some of Hearst's best known magazines, including Esquire, Popular Mechanics, and Cosmopolitan.",
+          "The projects were as varied as the titles. I built a Drinks Database for Esquire, a content management system for Popular Mechanics that ran features like their famous beer can chicken recipe, and the online quizzes for Cosmopolitan. It was where I learned that the systems editors and producers use behind the scenes matter as much as the thing readers see. That idea, good internal tools make better journalism, turns up again and again through the rest of my career.",
+        ],
+        tags: ["Publishing tools", "Interactives", "Magazines"],
+      },
+      {
+        title: "Before the newsroom",
+        kicker: "Early web and startups · 1995 to 2007",
+        meta: "New York · San Francisco",
+        description: [
+          "I have been building for the web since it was young. I started at Interactive Imaginations in New York while still in high school, working on the riddler.com games site and an early digital ad network. At Macromedia I helped build the first Flash version of their own website and sat on the Dreamweaver advisory board. At vivid studios in San Francisco I built the Webby Awards site and ran Sun servers as a unix sysadmin.",
+          "The pattern held as the web grew up. I was tech lead at Oven Digital, then a very early social media hacker at Friendster in Mountain View, where I sped up the Java based site and built Groups, profile skins, and in site messaging with anti spam controls. Later I was a software engineer at StreetEasy, the New York property startup that Zillow went on to buy, and I contributed to Spot.Us, one of the first crowdfunded journalism platforms. All of it fed the work that came next.",
+        ],
+        tags: ["Friendster", "Macromedia", "StreetEasy", "Early web"],
       },
     ],
   },
   {
     heading: "Speaking",
-    when: "Conferences and festivals",
+    when: "Conferences and festivals (not an exhaustive list)",
     projects: [
       {
         title: "Too Much Information",
@@ -349,12 +423,21 @@ a standard format via API. It is a piece of work that has stayed with me, a remi
       },
       {
         title: "Thinking Different: using Ruby to fight AIDS",
-        kicker: "Talk",
+        kicker: "Talk · Golden Gate Ruby Conference, San Francisco",
         meta: "On the Baobab Health work in Malawi",
         description: [
-          "A talk about building the antiretroviral treatment system in Malawi, and what it takes to make clinical software work in a low resource setting. I have also spoken at NICAR, the Perugia Journalism Festival, and the Reuters Institute at Oxford.",
+          "A talk for the Ruby community about using technology to affect change, told through the Baobab Health work in Malawi. It covers the reality of shipping clinical software where the internet is slow, the power cuts out, and there is no app store. The team hacked donated iOpener terminals to take touchscreens and barcode scanners, ran a self healing mesh network, and treated the test suite as something that literally saves lives.",
         ],
-        tags: ["Health tech", "Global development"],
+        tags: ["Health tech", "Global development", "Ruby"],
+      },
+      {
+        title: "Structured Journalism and Reporting with Data",
+        kicker: "Seminar · Reuters Institute, Oxford",
+        meta: "Reuters Institute for the Study of Journalism",
+        description: [
+          "I led a seminar at the Reuters Institute for the Study of Journalism on structured journalism and reporting with data. It drew on the BBC News Labs work, from turning the archive into reusable structured data to using bots to reach readers on the platforms they already use. I have also spoken at NICAR and the Perugia Journalism Festival.",
+        ],
+        tags: ["Structured journalism", "Data reporting", "Teaching"],
       },
     ],
   },
