@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jacqui Lough",
-  description: "About me, my projects, CV, and contact info.",
+  title: "Jacqui Lough · Data Journalist and Public Health Developer",
+  description:
+    "Portfolio of Jacqui Lough. Two decades of data journalism at the New York Times, the BBC, and Condé Nast, now pointed at public health.",
 };
 
 export default function RootLayout({
@@ -30,22 +31,31 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-brand-bg text-brand-text antialiased flex flex-col">
         {/* Sticky Header */}
-        <header className="sticky top-0 z-50 w-full bg-white border-b border-brand-light bg-white/90 backdrop-blur-sm">
+        <header className="sticky top-0 z-50 w-full border-b border-brand-light bg-white/90 backdrop-blur-sm">
           <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span className="font-bold text-xl tracking-tight text-brand-primary">
+            <span className="font-bold text-xl tracking-tight text-black">
+              <a href="/" className="transition-colors">
+                Jacqui <span className="text-brand-primary">Lough</span>
+              </a>
+            </span>
+            <nav className="flex items-center gap-6 text-sm font-medium sm:gap-8">
               <a
                 href="/"
                 className="hover:text-brand-primary transition-colors"
               >
-                Jacqui Lough
+                Home
               </a>
-            </span>
-            <nav className="flex items-center text-sm font-medium flex-wrap justify-between gap-4">
               <a
                 href="/projects"
                 className="hover:text-brand-primary transition-colors"
               >
                 Projects
+              </a>
+              <a
+                href="/about"
+                className="hover:text-brand-primary transition-colors"
+              >
+                About
               </a>
               <a
                 href="/cv.pdf"
@@ -54,12 +64,6 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 CV
-              </a>
-              <a
-                href="/about"
-                className="hover:text-brand-primary transition-colors"
-              >
-                About Me
               </a>
             </nav>
           </div>

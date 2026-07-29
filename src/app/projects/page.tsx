@@ -510,10 +510,10 @@ export default function ProjectsPage() {
           Twenty years of data stories, tools, and experiments.
         </h1>
         <p className="max-w-2xl text-lg leading-8 text-zinc-600">
-          Here is a working sample of projects across public health, newsroom
+          Here is a sample of projects across public health, newsroom
           technology, and interactive journalism. Some I led, some I built as
           part of a team. Where a colleague wrote up the work, I have linked to
-          their account so you can read it in full.
+          their piece so you can read it in full.
         </p>
       </header>
 
@@ -534,9 +534,9 @@ export default function ProjectsPage() {
 
           {era.heading === "The New York Times" && (
             <blockquote className="mb-7 border-l-4 border-brand-primary py-1 pl-5 text-xl leading-relaxed text-brand-primary">
-              The trick is to give people signals, not noise. Disclose
-              information in a way that enhances understanding rather than
-              clouds it.
+              Programmer and journalist smarts are indispensable. There is no
+              data shortage anywhere, so our job is to enhance the news and make
+              information easier to parse.
             </blockquote>
           )}
 

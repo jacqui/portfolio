@@ -35,8 +35,8 @@ export default function AboutPage() {
         </p>
 
         <blockquote className="my-8 border-l-4 border-brand-primary py-1 pl-5 text-xl leading-relaxed text-brand-primary">
-          The best data work is not about the numbers. It is about what they
-          mean for the people behind them.
+          My favourite thing is taking a dense display of data and finding the
+          small human detail that livens it up.
         </blockquote>
 
         <p className="mb-5 text-lg leading-8 text-zinc-700">
@@ -94,12 +94,13 @@ export default function AboutPage() {
           The tools I reach for
         </h3>
         <p className="mb-5 text-lg leading-8 text-zinc-700">
-          On the front end I work with JavaScript, React, Next.js, and D3. For
-          data work I use Python and pandas, though I also have extensive
-          experience doing this with Ruby. I can ship full applications with
-          Drizzle, Neon Postgres, and Vercel. I have also spent years in Rails,
-          SQL, systems admin'ing Linux, and the unglamorous plumbing that keeps
-          live data flowing when it matters most.
+          On the front end I primarily work with JavaScript, React, Next.js, and
+          D3. For data work I use Python and pandas, though I also have
+          extensive experience doing this with Ruby. I can ship full
+          applications with Drizzle, Neon Postgres, and Vercel. I have also
+          spent years in Rails, SQL, systems admin'ing Linux, and the
+          unglamorous plumbing that keeps live data flowing when it matters
+          most.
         </p>
 
         <div className="mt-6 rounded-lg border border-brand-light bg-brand-bg p-5 text-[15px] leading-7 text-zinc-700">
