@@ -53,7 +53,7 @@ const eras: Era[] = [
         id: "immunisation-map",
         description: [
           "A choropleth map showing childhood immunisation coverage across Australia at the SA3 local area level. I cleaned and reshaped the raw coverage data in Python and pandas, then built the map in D3 as an interactive SVG.",
-          "Readers can hover over any region for a tooltip with its exact coverage rate, and switch between one, two, and five year old cohorts. A reference line marks the 95 per cent target needed for herd immunity, so it is easy to see which areas fall short.",
+          "Readers can hover over any region for a tooltip with its exact coverage rate, and switch between one, two, and five year old cohorts. A reference line marks the 95 per cent target needed for herd immunity, so it is easy to see which areas fall short. Note: some areas are blank, this project is incomplete.",
         ],
         tags: [
           "Data cleaning",
