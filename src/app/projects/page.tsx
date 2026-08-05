@@ -24,6 +24,28 @@ const eras: Era[] = [
     when: "2024 – now · Melbourne",
     projects: [
       {
+        title: "Australian Species at Risk from H5N1 Bird Flu",
+        kicker: "Explainer · Work-in-Progress",
+        meta: "Spreadsheets · React",
+        feature: true,
+        id: "aussie-h5n1",
+        description: [
+          "A compendium of the species most at risk from bird flu in Australia, providing information on their current conservation status, h5n1 infection status, and ideally, awesome photos of these guys.",
+          "The Australian government has listed 150 birds and 10 mammals unique to Australia that are most at risk from H5N1, but they haven't published this data. Using a variety of sources, I am compiling a spreadsheet by hand to produce a single source of who these animals are, with some minor profile information, conservation and infection status, etc.",
+        ],
+        tags: [
+          "Data sourcing and compiling",
+          "Component cards",
+          "Contextualising News",
+        ],
+        links: [
+          {
+            label: "Species List (so far)",
+            url: "https://aussie-wildlife-risk-h5n1.vercel.app/species",
+          },
+        ],
+      },
+      {
         title: "Australian childhood vaccination rates",
         kicker: "Interactive map · D3",
         meta: "Python · pandas · D3 · SVG",
@@ -45,8 +67,8 @@ const eras: Era[] = [
       },
       {
         title: "Is there a vaccine for that?",
-        kicker: "Web app · Next.js",
-        meta: "Next.js · Drizzle ORM · Neon Postgres · Tailwind · Work-in-Progress",
+        kicker: "Prototype · Explainer",
+        meta: "Next.js · Drizzle ORM · Neon Postgres · Tailwind · Skeptical AI",
         feature: true,
         id: "vaccine-tracker",
         description: [
@@ -106,8 +128,8 @@ const eras: Era[] = [
         tags: ["Live sport", "Large data", "Tooltips", "Syndication"],
         links: [
           {
-            label: "Nieman Lab",
-            url: "https://www.niemanlab.org/2013/04/the-new-york-times-tackles-the-olympics/",
+            label: "My full write-up on Source",
+            url: "https://source.opennews.org/articles/london-calling-winning-data-olympics/",
           },
         ],
       },
@@ -250,7 +272,7 @@ const eras: Era[] = [
         tags: ["Twitter bot", "Search API", "Experiment"],
         links: [
           {
-            label: "Write-up on Source",
+            label: "My write-up on Source",
             url: "https://source.opennews.org/articles/bot-find-source-serendipity/",
           },
         ],
@@ -264,7 +286,12 @@ const eras: Era[] = [
           "Madison runs on Hive, an open source platform I created for building crowdsourcing apps in many contexts. Informed by our Streamtools work, Hive uses Go for fast JSON parsing and a clean interface to Elasticsearch. Pairing a compiled language with a search engine let it handle a wide variety of reader contributions across very different tasks.",
         ],
         tags: ["Crowdsourcing", "Go", "Elasticsearch", "Open source"],
-        links: [{ label: "Madison", url: "https://madison.nytimes.com/" }],
+        links: [
+          {
+            label: "NiemanLab",
+            url: "https://www.niemanlab.org/2014/12/the-new-york-times-rd-lab-releases-hive-an-open-source-crowdsourcing-tool/",
+          },
+        ],
       },
     ],
   },
@@ -333,6 +360,12 @@ const eras: Era[] = [
           "Part of the wider News Labs push to treat the facts inside a story as structured, reusable data rather than plain text. The idea is that once a fact is captured properly it can power many stories, formats, and tools, from graphics to bots.",
         ],
         tags: ["Data modelling", "Research", "Reusable content"],
+        links: [
+          {
+            label: "A Manifesto for Structured Journalism (archive)",
+            url: "https://web.archive.org/web/20150928230448/https://bbcnewslabs.co.uk/2015/07/07/a-manifesto-for-structured-journalism/",
+          },
+        ],
       },
     ],
   },
